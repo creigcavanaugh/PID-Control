@@ -6,7 +6,7 @@
 [//]: # (Image References)
 [image1]: ./output/screenshot_1.png
 [image2]: ./output/screenshot_2.png
-[video1]: ./output/PID_video1.mp4
+[video1]: ./output/output.mp4
 
 ### [Rubric](https://review.udacity.com/#!/rubrics/824/view) Points
 
@@ -39,7 +39,7 @@ Kd = 0.5
 
 The controller implemented with these gains, as well as some additional throttle logic, achieves nearly 80 mph.
 
-Here's a [link to my video result](./output/PID_video1.mp4)
+Here's a [link to my video result](./output/output.mp4)
 
 
 In addition to manual tuning, I created an implementation similar to Twiddle with the intent to further optimize the gains.  Although it was automatically cycling through gain combinations, its usefulness was limited, since as it was tuning the parameters, the car would run off the road when it selected sub-optimal combinations, and there was no automated way to reset the course.  Due to this limitation, it was not practical to leave in the final version, although I have linked it [here](./output/main_with_twiddle.cpp) for reference.  A future improvement of the simulator could be to implement a "reset" command and perhaps also a lap timing mechanism.
